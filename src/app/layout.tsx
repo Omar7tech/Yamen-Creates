@@ -5,6 +5,7 @@ import {
   Bricolage_Grotesque,
 } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
       className={`${bricolageGrotesque.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="antialiased">
+        <Nav />
         {children}
       </body>
     </html>
