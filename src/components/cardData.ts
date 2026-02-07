@@ -34,13 +34,14 @@ export const cardData: BentoCardProps[] = [
     title: '',
     description: '',
     label: '',
-    image: '/bento-img5.webp'
+    image: '/bento-img6.webp'
   },
   {
     color: 'transparent',
     title: '',
     description: '',
     label: '',
-    image: '/bento-img6.webp'
-  }
+    image: '/bento-img5.webp'
+  },
+
 ];
