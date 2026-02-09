@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-bricolage-grotesque);
   --font-mono: var(--font-geist-mono);
-  --font-special-gothic-expanded: var(--font-special-gothic-expanded);
+  --font-special-gothic-expanded: "Special Gothic Expanded One", sans-serif;
 }
 
 body {
