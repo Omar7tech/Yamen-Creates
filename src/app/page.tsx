@@ -1,15 +1,23 @@
 import MagicBento from "@/components/MagicBento";
 import HeroSection from "@/sections/HeroSection";
 import WeBelieveSection from "@/sections/WeBelieveSection";
-import Image from "next/image";
+import OurBrandEquation from "@/sections/OurBrandEquation";
+import HowWeWork from "@/sections/HowWeWork";
+import ServicesSection from "@/sections/ServicesSection";
 
 export default function Home() {
 
 
   return (
-    <div className="mt-32 max-w-[1400px] mx-auto  px-5">
+    <div className="mt-32  space-y-20 ">
       <HeroSection />
       <WeBelieveSection />
+      <OurBrandEquation />
+      <HowWeWork />
+      <ServicesSection />
+      <div className="h-200">
+
+      </div>
     </div>
   );
 }

@@ -10,10 +10,28 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-bricolage-grotesque);
   --font-mono: var(--font-geist-mono);
+  --font-special-gothic-expanded: var(--font-special-gothic-expanded);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+.underline-curve {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-curve::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.320em;
+  width: 100%;
+  height: 0.35em;
+  border-top: clamp(1px, 0.6vw, 5px) solid currentColor;
+  border-radius: 100% 100% 0 0;
+  transform: rotate(-1.5deg);
 }

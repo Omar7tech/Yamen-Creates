@@ -10,10 +10,8 @@ function HeroSection() {
     "Experience",
   ];
   return (
-
-    <div>
+    <div className="px-5 md:px-10 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-10">
-
         <div className="space-y-5">
           <div>
             <h1 className="font-bold text-[clamp(1.5rem,4vw,3.6rem)] leading-none">

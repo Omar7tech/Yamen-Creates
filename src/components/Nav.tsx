@@ -9,7 +9,7 @@ const links = [
 ]
 function Nav() {
     return (
-        <nav className="max-w-[1400px] mx-auto fixed z-50 top-0 left-0 right-0 flex content-center justify-between items-center p-5">
+        <nav className="mx-auto fixed z-50 top-0 left-0 right-0 flex content-center justify-between items-center p-5 max-w-[2000px] px-5 md:px-10 lg:px-15">
             <div className="font-light text-2xl border-solid border-white/[.145] border-2 rounded-full px-4 py-3 backdrop-blur-sm bg-white/5 transition-all duration-300 hover:bg-gray-100 hover:border-gray-300 hover:scale-105 cursor-pointer group">
                 <Image 
                     src={logo} 
