@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <div className="mt-32  space-y-20 ">
+    <div className="mt-32  space-y-8 ">
       <HeroSection />
       <WeBelieveSection />
       <OurBrandEquation />
@@ -21,9 +21,6 @@ export default function Home() {
       <ServicesSection />
       <RecentlyCreated />
       <Clients />
-      <div className="h-200">
-
-      </div>
     </div>
   );
 }

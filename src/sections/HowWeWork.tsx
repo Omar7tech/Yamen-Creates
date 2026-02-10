@@ -10,8 +10,8 @@ function HowWeWork() {
                     className="grid h-full grid-rows-[auto_1fr]"
                 >
                     <h1 className="font-special-gothic-expanded text-[clamp(1rem,7.5vw,6rem)] font-extrabold leading-none">
-                        How
-                        <br />
+                        How{" "}
+                        <br className="hidden md:block" />
                         We Work
                     </h1>
 

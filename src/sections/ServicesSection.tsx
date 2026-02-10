@@ -2,7 +2,7 @@ import ServiceCard from "@/components/ServiceCard"
 
 function ServicesSection() {
     return (
-        <section className="relative py-10">
+        <section className="relative pt-10">
             {/* MASSIVE background glow (bleeds across sections) */}
             <div
                 aria-hidden

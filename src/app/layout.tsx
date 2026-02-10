@@ -7,6 +7,8 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import FooterIntro from "@/components/FooterIntro";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -21,12 +23,14 @@ const geistMono = Geist_Mono({
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage-grotesque",
+
 });
 
 const specialGothicExpanded = Special_Gothic_Expanded_One({
   subsets: ["latin"],
   variable: "--font-special-gothic-expanded",
   weight: "400",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -47,6 +51,8 @@ export default function RootLayout({
       <body className="antialiased  max-w-[2000px] mx-auto" suppressHydrationWarning>
         <Nav />
         {children}
+        <FooterIntro />
+        <Footer />
       </body>
     </html>
   );

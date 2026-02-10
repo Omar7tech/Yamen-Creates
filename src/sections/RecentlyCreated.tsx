@@ -40,8 +40,8 @@ function ProjectTile({ project, colSpan }: { project: ProjectCard; colSpan: stri
 
 export default function RecentlyCreated() {
   return (
-    <div className="px-5 md:px-10 lg:px-20 py-20">
-      <h1 className="uppercase font-special-gothic-expanded text-[clamp(1rem,7.5vw,6rem)] font-extrabold leading-[0.95] mb-20">
+    <div className="px-5 md:px-10 lg:px-20 pt-8 md:pt-20">
+      <h1 className="uppercase font-special-gothic-expanded text-[clamp(1rem,6vw,6rem)] font-extrabold leading-[0.95] mb-6">
         Recently Created
       </h1>
 
