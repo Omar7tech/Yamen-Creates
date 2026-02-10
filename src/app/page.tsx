@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <div className="mt-32  space-y-8 ">
+    <div className="mt-32  space-y-8">
       <HeroSection />
       <WeBelieveSection />
       <OurBrandEquation />

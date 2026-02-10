@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { Menu } from "lucide-react"
 import DecryptedText from "@/components/DecryptedText"
+import Link from "next/link"
 const logo = "/yamenlogo.svg"
 const links = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "Work", href: "/work" },
     { name: "Contact", href: "/contact" },
 ]
 function Nav() {
@@ -21,7 +22,7 @@ function Nav() {
             </div>
             <div className="hidden sm:flex space-x-3">
                 {links.map((link) => (
-                    <a 
+                    <Link
                         key={link.href}
                         className="font-light text-2xl border-solid border-white/[.145] border-2 rounded-full px-4 py-2 backdrop-blur-sm bg-white/5 transition-all duration-300 hover:bg-white/10 hover:border-white/5 hover:text-zinc-300 hover:scale-105" 
                         href={link.href}
@@ -34,7 +35,7 @@ function Nav() {
                             sequential
                             useOriginalCharsOnly={false}
                         />
-                    </a>
+                    </Link>
                 ))}
             </div>
 
