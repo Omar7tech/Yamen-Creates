@@ -25,7 +25,7 @@ function HowWeWork() {
                         />
                     </div>
                 </div>
-                <div id="paragraph" className="font-extralight text-[clamp(1.125rem,2.5vw,1.875rem)] space-y-5 tracking-wide leading-[1.2]">
+                <div id="paragraph" className="font-extralight text-[clamp(1.125rem,2.5vw,1.7rem)] space-y-5 tracking-wide leading-[1.2]">
                     <p>
                         At Yamen Creates, we work through four
                         clearly defined programs, each built

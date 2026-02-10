@@ -23,7 +23,7 @@ function WeBelieveSection() {
                             />
                         </div>
                     </div>
-                    <div id="paragraph" className="font-extralight text-[clamp(1.125rem,2.5vw,1.875rem)] space-y-5 tracking-wide">
+                    <div id="paragraph" className="font-extralight text-[clamp(1.125rem,2.5vw,1.7rem)] space-y-5 tracking-wide leading-[1.2]">
                         <p>
                             We believe every business starts with an
                             idea—but only becomes a brand through
