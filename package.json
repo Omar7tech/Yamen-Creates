@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.12",
     "@react-three/fiber": "^9.3.0",
     "@types/three": "^0.182.0",
     "class-variance-authority": "^0.7.1",

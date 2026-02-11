@@ -11,7 +11,6 @@ const projectData: ProjectCard[] = [
   { id: 6, image: '/bento-img6.webp', alt: 'Makeup Artist', title: 'Makeup Artist', description: 'Professional makeup services and brand consultation' }
 ]
 
-// describes the grid visually, not procedurally
 const layout = [
   { index: 0, colSpan: 'col-span-1' },
   { index: 1, colSpan: 'col-span-1' },

@@ -2,6 +2,7 @@ import DecryptedText from "@/components/DecryptedText";
 import MagicBento from "@/components/MagicBento"
 import StarBorder from "@/components/StarBorder";
 import { ArrowRight } from "lucide-react";
+import AnimatedDescription from "@/components/AnimatedDescription";
 
 function HeroSection() {
   
@@ -40,16 +41,14 @@ function HeroSection() {
             </p>
           </div>
           <div className="space-y-5 max-w-[600px]">
-            <p className="text-white/70 text-sm leading-none text-[clamp(1rem,4vw,1.5rem)] font-extralight ">
-              to define the core ideas behind their businesses—then
-              build brand, marketing, content, and digital systems
-              that carry them through growth, complexity, and scale.
-            </p>
-            <p className="text-white/70 text-sm leading-none text-[clamp(1rem,4vw,1.5rem)] font-extralight ">
-              Yamen Creates is a strategic partner for businesses
-              that don't want noise—they want direction, structure,
-              and results.
-            </p>
+            <AnimatedDescription
+              text="to define the core ideas behind their businesses—then build brand, marketing, content, and digital systems that carry them through growth, complexity, and scale."
+              delay={0.2}
+            />
+            <AnimatedDescription
+              text="Yamen Creates is a strategic partner for businesses that don't want noise—they want direction, structure, and results."
+              delay={0.4}
+            />
             <div className="flex  flex-row  gap-2 md:gap-3 pt-5 text-sm md:text-base">
 
               <button className="px-3 md:px-6 border border-white/30 rounded-full text-white font-light hover:bg-white/10 transition-all duration-300 flex items-center justify-between gap-2">

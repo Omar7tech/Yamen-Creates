@@ -1,6 +1,6 @@
+'use client'
 import Image from "next/image"
-
-
+import { motion } from "framer-motion"
 
 function WeBelieveSection() {
 
@@ -12,11 +12,22 @@ function WeBelieveSection() {
                         id="title-illustration"
                         className="flex items-center justify-between gap-4 md:grid md:grid-rows-[auto_1fr] md:gap-0"
                     >
-                        <h1 className="font-special-gothic-expanded text-[clamp(6rem,10vw,15rem)] font-extrabold leading-[100px]">
+                        <motion.h1
+                            className="font-special-gothic-expanded text-[clamp(6rem,10vw,15rem)] font-extrabold leading-[100px]"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-100px" }}
+                        >
                             WE
-                        </h1>
-                        <div className="flex items-center min-h-0 md:hidden">
-
+                        </motion.h1>
+                        <motion.div
+                            className="flex items-center min-h-0 md:hidden"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-50px" }}
+                        >
                             <Image
                                 src="/jam.png"
                                 alt=""
@@ -24,76 +35,79 @@ function WeBelieveSection() {
                                 height={100}
                                 className="transition-all duration-500 hover:scale-115 hover:drop-shadow-2xl hover:shadow-purple-500/25"
                             />
-
-                        </div>
-                        <div className="hidden md:flex items-center justify-center content-center min-h-0">
-
+                        </motion.div>
+                        <motion.div
+                            className="hidden md:flex items-center justify-center content-center min-h-0"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-50px" }}
+                        >
                             <Image
-
                                 src="/illustration2.png"
-
                                 alt=""
-
                                 width={300}
-
                                 height={300}
-
                                 className="transition-all duration-500 hover:scale-115 hover:drop-shadow-2xl hover:shadow-purple-500/25"
-
                             />
-
-                        </div>
+                        </motion.div>
 
                     </div>
 
-                    <div id="paragraph" className="font-extralight text-[clamp(1.125rem,2.5vw,1.875rem)] space-y-5 tracking-wide leading-[1.2]">
+                    <motion.div
+                        id="paragraph"
+                        className="font-extralight text-[clamp(1.125rem,2.5vw,1.875rem)] space-y-5 tracking-wide leading-[1.2]"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+                        viewport={{ once: true, margin: "-50px" }}
+                    >
 
-                        <p>
-
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-30px" }}
+                        >
                             We believe every business starts with an
-
                             idea—but only becomes a brand through
-
                             clarity, structure, and intent.
+                        </motion.p>
 
-                        </p>
-
-                        <p>
-
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-30px" }}
+                        >
                             Our role is to transform raw concepts into
-
                             market-ready businesses by aligning
-
                             strategy with human behavior, and
-
                             translating ideas into brand, marketing,
-
                             content, and digital systems built to
-
                             perform through growth, complexity, and
-
                             scale.
+                        </motion.p>
 
-                        </p>
-
-                        <p>
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "-30px" }}
+                        >
                             Through program-led brand strategy,
                             identity systems, content direction, and
                             web infrastructure, we partner with
                             founders and leadership teams to build
-
                             brands that connect emotionally, operate
-
                             commercially, and endure over time.
+                        </motion.p>
 
-                        </p>
-
-                    </div>
+                    </motion.div>
 
                 </div>
 
             </div>
-
 
 
         </>

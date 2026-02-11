@@ -9,31 +9,11 @@ function ServiceCard({ index, title, items }: ServiceCardProps) {
       {/* card glow */}
       <div
         aria-hidden
-        className="
-          absolute inset-0
-          rounded-[2.5rem]
-          bg-purple-500/30
-          blur-2xl
-          opacity-60
-          group-hover:opacity-90
-          transition-opacity
-        "
+        className="absolute inset-0 rounded-[2.5rem] bg-purple-500/30 blur-2xl opacity-60 group-hover:opacity-90 transition-opacity"
       />
       {/* card */}
       <div
-        className="
-          relative
-          bg-[#262626]
-          rounded-[2.5rem]
-          px-10 py-14
-          min-h-fit
-          flex flex-col justify-between
-          border-2 border-transparent
-          [background:linear-gradient(#262626,#262626)_padding-box,linear-gradient(135deg,#d8b4fe_0%,#d8b4fe_25%,#a855f7_75%,#a855f7_100%)_border-box]
-          shadow-[0_0_40px_rgba(168,85,247,0.45)]
-          transition-transform duration-300
-          group-hover:-translate-y-2
-        "
+        className="relative bg-[#262626] rounded-[2.5rem] px-10 py-14 min-h-fit flex flex-col justify-between border-2 border-transparent [background:linear-gradient(#262626,#262626)_padding-box,linear-gradient(135deg,#d8b4fe_0%,#d8b4fe_25%,#a855f7_75%,#a855f7_100%)_border-box] shadow-[0_0_40px_rgba(168,85,247,0.45)] transition-transform duration-300 group-hover:-translate-y-2"
       >
         {/* title with index */}
         <div className="flex items-start justify-between">

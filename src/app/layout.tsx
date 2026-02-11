@@ -13,17 +13,19 @@ import FooterIntro from "@/components/FooterIntro";
 const geistSans = Geist({
   subsets: ["latin"],
   variable: "--font-geist-sans",
+  preload: false,
 });
 
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
+  preload: false,
 });
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage-grotesque",
-
+  preload: false,
 });
 
 const specialGothicExpanded = Special_Gothic_Expanded_One({
@@ -31,7 +33,10 @@ const specialGothicExpanded = Special_Gothic_Expanded_One({
   variable: "--font-special-gothic-expanded",
   weight: "400",
   display: "swap",
+  preload: false,
+  adjustFontFallback: false,
 });
+
 
 export const metadata: Metadata = {
   title: "Yamen Creates",
@@ -53,6 +58,7 @@ export default function RootLayout({
         {children}
         <FooterIntro />
         <Footer />
+        
       </body>
     </html>
   );
