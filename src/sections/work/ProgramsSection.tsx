@@ -5,40 +5,26 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import programsData from "@/data/programs.json"
 
 export default function ProgramsSection() {
     return (
         <div className="px-5 md:px-10 lg:px-20">
-            <h1 className="text-[clamp(1.5rem,4vw,3rem)]">Our Signature Programs</h1>
+            <h1 className="text-[clamp(1.5rem,4vw,3rem)]">{programsData.sectionTitle}</h1>
             <div className="mt-8">
                 <Accordion type="multiple">
-                    <AccordionItem value="item-1">
-                        <AccordionTrigger className="text-[clamp(1.5rem,4vw,5rem)] font-special-gothic-expanded uppercase">YC-FOUNDATION</AccordionTrigger>
-                        <AccordionContent>
-                            <SignatureProgramItem />
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-2">
-                        <AccordionTrigger className="text-[clamp(1.5rem,4vw,5rem)] font-special-gothic-expanded uppercase" >YC-FRAMEWORK</AccordionTrigger>
-                        <AccordionContent>
-                            <SignatureProgramItem />
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                        <AccordionTrigger className="text-[clamp(1.5rem,4vw,5rem)] font-special-gothic-expanded uppercase">YC-REPOSITION</AccordionTrigger>
-                        <AccordionContent>
-                            <SignatureProgramItem />
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-4">
-                        <AccordionTrigger className="text-[clamp(1.5rem,4vw,5rem)] font-special-gothic-expanded uppercase">YC-SCALE</AccordionTrigger>
-                        <AccordionContent>
-                            <SignatureProgramItem />
-                        </AccordionContent>
-                    </AccordionItem>
+                    {programsData.programs.map((program) => (
+                        <AccordionItem key={program.id} value={program.id}>
+                            <AccordionTrigger className="text-[clamp(1.5rem,4vw,5rem)] font-special-gothic-expanded uppercase">
+                                {program.title}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <SignatureProgramItem program={program} />
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
                 </Accordion>
             </div>
-
         </div>
     )
 }

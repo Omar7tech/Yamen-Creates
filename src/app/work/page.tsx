@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import HeroSection from "@/sections/work/HeroSection"
 import ProgramsSection from "@/sections/work/ProgramsSection"
+
+export const metadata: Metadata = {
+  title: "Yamen Creates - Work",
+};
 
 function page() {
   return (

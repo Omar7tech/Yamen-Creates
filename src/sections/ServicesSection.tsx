@@ -36,7 +36,7 @@ function ServicesSection() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+                        transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
                         viewport={{ once: true, margin: "0px" }}
                     >
                         <ServiceCard
@@ -48,7 +48,7 @@ function ServicesSection() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                         viewport={{ once: true, margin: "0px" }}
                     >
                         <ServiceCard
@@ -60,7 +60,7 @@ function ServicesSection() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
+                        transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
                         viewport={{ once: true, margin: "0px" }}
                     >
                         <ServiceCard
@@ -72,7 +72,7 @@ function ServicesSection() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 1.4, ease: "easeOut" }}
+                        transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
                         viewport={{ once: true, margin: "0px" }}
                     >
                         <ServiceCard

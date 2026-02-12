@@ -50,7 +50,7 @@ function WeCoCreate() {
                         viewport={{ once: true, margin: "-50px" }}
                         className="transform-gpu"
                     >
-                        -Create <span className="text-white/50 ">®</span>
+                        -Create <span className="text-white ">®</span>
                     </motion.h1>
                 </div>
             </motion.div>
